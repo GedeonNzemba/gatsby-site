@@ -1,13 +1,15 @@
 import React, { useEffect } from "react"
+import { ParallaxProvider } from 'react-scroll-parallax';
+import { Parallax } from 'react-scroll-parallax';
 import { useStaticQuery, graphql } from "gatsby"
 import Helmet from "react-helmet"
 import IMG from "gatsby-image"
 import "../styles/Locataire.css"
 import "../fonts/gt super/stylesheet.css"
 import "../components/realty_about_layout"
-import ButtonFive from "../components/ButtonFive"
-import ButtonSix from "../components/ButtonSix"
-import ButtonSeven from "../components/ButtonSeven"
+// import ButtonFive from "../components/ButtonFive"
+import ButtonSix from "../components/buttonSix"
+import ButtonSeven from "../components/buttonSeven"
 import ButtonEight from "../components/ButtonEight"
 import ButtonSevenB from "../components/buttonNine"
 import Contact_btn from "../components/Contact_btn"
@@ -18,36 +20,36 @@ import RiskManagement from "./RiskManagement"
 import Farm from "./Farm"
 
 import Contact from "./Contact"
-import ScriptTag from 'react-script-tag';
+// import ScriptTag from 'react-script-tag';
 
 
 export default function RealEstate() {
-  const cover_mobile = require("../images/REALTY/mobile/drawable-mdpi/Group11.png")
-  const realty_about = require("../images/REALTY/realty_about_layout.png");
-  const realty_about_2 = require("../images/REALTY/realty_about_layout-about-2.png");
-  const realty_about_3 = require("../images/REALTY/realty_about_layout-about-3.png");
+  // const cover_mobile = require("../images/REALTY/mobile/drawable-mdpi/Group11.png")
+  // const realty_about = require("../images/REALTY/realty_about_layout.png");
+  // const realty_about_2 = require("../images/REALTY/realty_about_layout-about-2.png");
+  // const realty_about_3 = require("../images/REALTY/realty_about_layout-about-3.png");
 
-  const cdn_1 = require("../static/engine0/style.css");
+  // const cdn_1 = require("../static/engine0/style.css");
   // const cdn_2 = require("../images/REALTY/engine1/script");
   // const cdn_3 = require("https://locataire.imfast.io/engine1/jquery.js");
   // const cdn_4 = require("https://locataire.imfast.io/engine1/wowslider.mod.js");
 
   // IMAGES FOR HEADER SLIDER
-  const image_1 = require("../images/REALTY/data1/images/image_1.jpg");
-  const image_2 = require("../images/REALTY/data1/images/image_2.jpg");
-  const image_3 = require("../images/REALTY/data1/images/image_3.jpg");
-  const image_4 = require("../images/REALTY/data1/images/image_4.jpg");
-  const image_5 = require("../images/REALTY/data1/images/image_5.jpg");
-  const image_6 = require("../images/REALTY/data1/images/image_6.jpg");
-  const image_7 = require("../images/REALTY/data1/images/image_7.jpg");
+  const image_1 = require("../images/REALTY/data0/images/image_1.jpg");
+  const image_2 = require("../images/REALTY/data0/images/image_2.jpg");
+  const image_3 = require("../images/REALTY/data0/images/image_3.jpg");
+  const image_4 = require("../images/REALTY/data0/images/image_4.jpg");
+  const image_5 = require("../images/REALTY/data0/images/image_5.jpg");
+  const image_6 = require("../images/REALTY/data0/images/image_6.jpg");
+  const image_7 = require("../images/REALTY/data0/images/image_7.jpg");
 
-  const image_1a = require("../images/REALTY/data1/tooltips/image_1.jpg");
-  const image_2b = require("../images/REALTY/data1/tooltips/image_2.jpg");
-  const image_3c = require("../images/REALTY/data1/tooltips/image_3.jpg");
-  const image_4d = require("../images/REALTY/data1/tooltips/image_4.jpg");
-  const image_5e = require("../images/REALTY/data1/tooltips/image_5.jpg");
-  const image_6f = require("../images/REALTY/data1/tooltips/image_6.jpg");
-  const image_7g = require("../images/REALTY/data1/tooltips/image_7.jpg");
+  const image_1a = require("../images/REALTY/data0/tooltips/image_1.jpg");
+  const image_2b = require("../images/REALTY/data0/tooltips/image_2.jpg");
+  const image_3c = require("../images/REALTY/data0/tooltips/image_3.jpg");
+  const image_4d = require("../images/REALTY/data0/tooltips/image_4.jpg");
+  const image_5e = require("../images/REALTY/data0/tooltips/image_5.jpg");
+  const image_6f = require("../images/REALTY/data0/tooltips/image_6.jpg");
+  const image_7g = require("../images/REALTY/data0/tooltips/image_7.jpg");
 
 
 
@@ -84,7 +86,7 @@ export default function RealEstate() {
       document.body.appendChild(script)
     }
 
-
+    
 
     addCSS("https://locataire.imfast.io/engine1/style.css");
     addJquery("https://locataire.imfast.io/engine1/jquery.js");
@@ -130,7 +132,7 @@ export default function RealEstate() {
 
   return (
     <>
-
+      <ParallaxProvider>
       <div className="realEstate-midD">
       <nav className="realEstate-navbar">
           <Router>
@@ -192,7 +194,9 @@ export default function RealEstate() {
             </div>
           </section>
           <section className="realEstate-image">
+            <Parallax >
             <IMG fluid={data.mobileTwo.childImageSharp.fluid} className="mobile_one tablet__IMG"  />
+            </Parallax>
             <div className="svg-Mobile-about_left" />
             <div className="svg-Mobile-about_right"></div>
           </section>
@@ -236,7 +240,9 @@ export default function RealEstate() {
             </div>
           </section>
           <section className="realEstate-image">
+            <Parallax >
             <IMG fluid={data.mobileOne.childImageSharp.fluid} className="mobile_one tablet__IMG"/>
+            </Parallax>
             <div id="svg-Mobile-about_left"/>
             <div className="svg-Mobile-about_right" id="svg-Mobile-about_right" />
           </section>
@@ -352,7 +358,9 @@ export default function RealEstate() {
             </div>
           </section>
           <section className="realEstate-image">
+            <Parallax >
             <IMG fluid={data.mobileTwo.childImageSharp.fluid} className="mobile_one tablet__IMG"/>
+            </Parallax>
             <div id="svg-Mobile-about_left"/>
             <div className="svg-Mobile-about_right" id="svg-Mobile-about_right" />
           </section>
@@ -514,14 +522,15 @@ export default function RealEstate() {
                 src={require("../images/logo.png")}
                 alt="Locataire logo"
               ></img>
+
             </div>
             <div className="realEstate_navItem">
               <ul>
-                <li>home</li>
-                <li>real estate</li>
-                <li>livestock</li>
-                <li>risk management</li>
-                <li>career</li>
+                <li><a href="www.google.com" >home</a></li>
+                <li><a href="www.google.com" >real estate</a></li>
+                <li><a href="www.google.com" >livestock</a></li>
+                <li><a href="www.google.com" >risk management</a></li>
+                <li><a href="www.google.com">career</a></li>
               </ul>
             </div>
             <div className="realEstate_contactBtn">
@@ -571,117 +580,117 @@ export default function RealEstate() {
                     <li>
                       <img
                         src={image_1}
-                        alt="multi-family homes"
-                        title="multi-family homes"
+                        alt=""
+                        
                         id="wows1_0"
                       />
-                      Locataire offers to prospective partners opportunities to
+                      {/* Locataire offers to prospective partners opportunities to
                       invest in dozens of high-growth residential and commercial
-                      properties in the United States, and Canada.
+                      properties in the United States, and Canada. */}
                     </li>
                     <li>
                       <img
                         src={image_2}
                         alt="Residential Real Estate"
-                        title="Residential Real Estate"
+                        // 
                         id="wows1_1"
                       />
-                      Locataire offers to prospective partners opportunities to
+                      {/* Locataire offers to prospective partners opportunities to
                       invest in dozens of high-growth residential and commercial
-                      properties in the United States, and Canada.
+                      properties in the United States, and Canada. */}
                     </li>
                     <li>
                       <img
                         src={image_3}
                         alt="Residential Real Estate"
-                        title="Residential Real Estate"
+                        // 
                         id="wows1_2"
                       />
-                      Locataire offers to prospective partners opportunities to
+                      {/* Locataire offers to prospective partners opportunities to
                       invest in dozens of high-growth residential and commercial
-                      properties in the United States, and Canada.
+                      properties in the United States, and Canada. */}
                     </li>
                     <li>
                       <img
                         src={image_4}
                         alt="Residential Real Estate"
-                        title="Residential Real Estate"
+                        // 
                         id="wows1_3"
                       />
-                      Locataire offers to prospective partners opportunities to
+                      {/* Locataire offers to prospective partners opportunities to
                       invest in dozens of high-growth residential and commercial
-                      properties in the United States, and Canada.
+                      properties in the United States, and Canada. */}
                     </li>
                     <li>
                       <img
                         src={image_5}
-                        alt="multi-family homes"
-                        title="multi-family homes"
+                        alt=""
+                        
                         id="wows1_4"
                       />
-                      Locataire offers to prospective partners opportunities to
+                      {/* Locataire offers to prospective partners opportunities to
                       invest in dozens of high-growth residential and commercial
-                      properties in the United States, and Canada.
+                      properties in the United States, and Canada. */}
                     </li>
                     <li>
                       <a href="http://wowslider.net">
                         <img
                           src={image_6}
                           alt="wow slider"
-                          title="multi-family homes"
+                          
                           id="wows1_5"
                         />
                       </a>
-                      Locataire offers to prospective partners opportunities to
+                      {/* Locataire offers to prospective partners opportunities to
                       invest in dozens of high-growth residential and commercial
-                      properties in the United States, and Canada.
+                      properties in the United States, and Canada. */}
                     </li>
                     <li>
                       <img
                         src={image_7}
                         alt="Residential Real Estate"
-                        title="Residential Real Estate"
+                        // 
                         id="wows1_6"
                       />
-                      Locataire offers to prospective partners opportunities to
+                      {/* Locataire offers to prospective partners opportunities to
                       invest in dozens of high-growth residential and commercial
-                      properties in the United States, and Canada.
+                      properties in the United States, and Canada. */}
                     </li>
                   </ul>
                 </div>
                 <div class="ws_bullets">
                   <div>
-                    <a href="#" title="multi-family homes">
+                    <a href="www.google.com" >
                       <span>
-                        <img src={image_1a} alt="multi-family homes" />1
+                        <img src={image_1a} alt="" />1
                       </span>
                     </a>
-                    <a href="#" title="Residential Real Estate">
+                    <a href="www.google.com" >
                       <span>
                         <img src={image_2b} alt="Residential Real Estate" />2
                       </span>
                     </a>
-                    <a href="#" title="Residential Real Estate">
+                    <a href="www.google.com" >
                       <span>
                         <img src={image_3c} alt="Residential Real Estate" />3
                       </span>
                     </a>
-                    <a href="#" title="Residential Real Estate">
+                    <a href="www.google.com" >
                       <span>
                         <img src={image_4d} alt="Residential Real Estate" />4
                       </span>
                     </a>
-                    <a href="#" title="multi-family homes">
+                    <a href="www.google.com" >
                       <span>
-                        <img src={image_5e} alt="multi-family homes" />5
+                        <img src={image_5e} alt="" />5
                       </span>
                     </a>
-                    <a href="#" title="multi-family homes">
+                    <a href="www.google.com" >
                       <span>
-                        <img src={image_6f} alt="multi-family homes" />6
+                        <img src={image_6f} alt="" />6
                       </span>
                     </a>
-                    <a href="#" title="Residential Real Estate">
+                    <a href="www.google.com" >
                       <span>
                         <img src={image_7g} alt="Residential Real Estate" />7
                       </span>
@@ -1218,6 +1227,7 @@ export default function RealEstate() {
         </div>
         <Contact />
       </div>
+      </ParallaxProvider>
     </>
   )
 }

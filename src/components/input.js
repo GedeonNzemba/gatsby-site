@@ -9,7 +9,7 @@ const Input = (props) => {
     }
     // send the value $blue in props.style to change it to blue input 
     // default colour is $green (as used in the lease application modal)
-    let style = props.blueStyle !==undefined ? "fieldBlue" : "fieldGreen";
+    // let style = props.blueStyle !==undefined ? "fieldBlue" : "fieldGreen";
 
     return (
         <div className={props.firstname ? ["inputSection", "inputSectionFirstname"].join(" ") : "inputSection"}>

@@ -23,7 +23,7 @@ html::-webkit-scrollbar {
 
     & header.realEstate_header {
         @include for-xsmall-desktop-only {
-
+            
         }
         @include for-tablet-landscape-only-mod {
             background-image: url("../images/REALTY/desktop/900.png");
@@ -37,7 +37,7 @@ html::-webkit-scrollbar {
         margin-bottom: 10%;
 
         @include for-tablet-landscape-only {
-            height: 108vh;
+            height: 100vh;
         }
         // background-image: url("../../image/REALTY/header.png");
         // background-repeat: no-repeat;
@@ -47,17 +47,96 @@ html::-webkit-scrollbar {
         //      background-color: $dark;
 
         // }
+        @media (min-width: 1024px) and (max-width: 1199px) {
+            height: 108vh
+        }
 
         & nav {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
 
+            @media (min-width: 1200px) {
+                justify-content: space-between;
+                & .realEstate_navigation {
+                    padding-top: 24px;
+                }
+            }
+
             &.realEstate_navigation {
                 // background-color: $green;
                 height: 10vh;
+                @media (min-width: 1200px) {
+                        padding-top: 24px;
+                    
+                }
                 @include for-tablet-landscape-only {
                     display: none;
+                }
+
+                @include for-xsmall-desktop-only {
+                    display: flex;
+                    flex-direction: row;
+                    font-family: 'GT Super Ds Trial Bd';
+                    // font-size: 17px;
+                    color: $decoration;
+                    z-index: 100;
+                    position: absolute;
+                    right: 0;
+                    // padding-top: 25px;
+                    padding-right: 3.5%;
+                    width: 100%;
+                    padding-left: 3.5%;
+
+                        // MOBILE
+                    & ul {
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
+                        list-style: none;
+                        padding: 0;
+                        margin: 0 0 1.45rem 1.45rem;
+
+                        & li {
+                            font-family: 'GT Super Ds Trial Bd';
+                            margin: 1.4rem;
+                            padding-left: 0;
+                            font-size: 1.9rem;
+
+
+                            @media (max-width: 1366px) {
+                                margin: 1rem;
+                            }
+
+                            & a {
+                                color: $decoration;
+                                margin-bottom: 0;
+                                position: relative;
+                                padding: 10px 10px 20px;
+                                margin-top: 20px;
+                                text-decoration: none;
+                                transition: .5s;
+                                // border-bottom: 2px solid #001a7d;
+
+                                @media (min-width: 1200px) and (max-width: 1365px) {
+                                    padding: 5px 3px 15px;
+                                }
+                            }
+
+                            & a::after {
+                                position: absolute;
+                                content: "";
+                                width: 100%;
+                                height: 2px;
+                                top: 100%;
+                                left: 0;
+                                background: #001a7d;
+                                transition: transform .5s;
+                                transform: scaleX(0);
+                                transform-origin: right;
+                            }
+                        }
+                    }
                 }
             }
 
@@ -79,9 +158,18 @@ html::-webkit-scrollbar {
             .realEstate_logoWrap {
                 padding-top: 1rem;
 
+                @include for-xsmall-desktop-only {
+                    padding-top: 0;
+                }
+
                 & img {
                     width: 236px;
                     height: 61px;
+
+                    @include for-xsmall-desktop-only {
+                        width: 190px;
+                        height: unset;
+                    }
                 }
             }
 
@@ -108,13 +196,17 @@ html::-webkit-scrollbar {
                         margin-right: 0.8rem;
                         color: inherit;
                         text-rendering: optimizeLegibility;
-                        font-size: $base-font-size;
+                        font-size: 1.9rem;
                         text-transform: capitalize;
                         font-weight: inherit;
                         cursor: pointer;
                         font-family: inherit;
                         letter-spacing: inherit;
                         line-height: 1.2;
+
+                        @include for-xsmall-desktop-only {
+                            font-size: 1.71rem;
+                        }
 
                     }
                 }
@@ -141,6 +233,8 @@ html::-webkit-scrollbar {
                 // background-color: $bluethick;
                 width: 45%;
                 height: 90vh;
+                justify-content: center;
+                margin-top: -15rem;
                 // border: 2px solid orangered;
 
                 & .realEstate_innerLeftContainer {
@@ -152,8 +246,16 @@ html::-webkit-scrollbar {
                     padding-top: 10rem;
                     padding-right: 2.5em;
 
+                    @media (min-width: 1200px) {
+                        padding-top: calc(120px + (150 - 120) * (100vw - 1200px) / (1365 - 1200));
+                    }
+
                     @media (min-width: 940px) {
                         padding-right: 5.5em;
+                    }
+
+                    @media (min-width: 1024px) and (max-width: 1199px) {
+                        padding-top: 15rem;
                     }
 
                     .realEstate_title-wrap {
@@ -172,6 +274,10 @@ html::-webkit-scrollbar {
                         }
                         @media (min-width: 901px) {
                             font-size: 5.5rem;
+                        }
+
+                        @include for-xsmall-desktop-only {
+                            font-size: 4.95rem;
                         }
 
                         & h1 {
@@ -195,6 +301,10 @@ html::-webkit-scrollbar {
 
                         @media (min-width: 901px) {
                             font-size: 2rem;
+                        }
+
+                        @include for-xsmall-desktop-only {
+                            font-size: 1.8rem;
                         }
 
                         & p {
@@ -426,6 +536,10 @@ html::-webkit-scrollbar {
         }
     }
 
+    & .realEstate_rightContainer > #wowslider-container1 > .ws-images > div > div > .ws-cover > .ws-effect > div {
+        display: none!important;
+    }
+
 }
 
 
@@ -438,10 +552,25 @@ html::-webkit-scrollbar {
 
     & .ws_images {
         width: 100%;
+        margin-top: 8rem;
+        @media (min-width: 1200px) {
+            transform: rotate(5deg);
+        }
 
     }
 }
 
 .ws_images>div {
     border-radius: 25% 0 50% 5%;
+
+    @include for-xsmall-desktop-only {
+        border-radius: 50% 0% 50% 35%;
+    }
+}
+
+.ws_controls {
+    display: none;
+}
+.ws-title {
+    display: none!important;
 }
