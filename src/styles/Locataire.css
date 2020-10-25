@@ -2945,6 +2945,13 @@ p {
           justify-content: flex-start;
 }
 
+@media (min-width: 900px) and (max-width: 1199px) {
+  .realty {
+    min-height: unset;
+    margin-bottom: 24rem;
+  }
+}
+
 .realty header.realty__heading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2980,6 +2987,13 @@ p {
   top: 0;
 }
 
+@media (min-width: 900px) and (max-width: 1199px) {
+  .realty header.realty__heading .realty__image-svgThree img {
+    width: 100px;
+    height: 149px;
+  }
+}
+
 .realty header.realty__heading div.realty__headerContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2991,12 +3005,24 @@ p {
   text-align: center;
 }
 
+@media (min-width: 900px) and (max-width: 1199px) {
+  .realty header.realty__heading div.realty__headerContainer {
+    margin-left: 8.5rem;
+  }
+}
+
 .realty header.realty__heading div.realty__headerContainer div.realty__smallTitle {
   color: #024EFF;
   font-size: 3rem;
   font-family: "Ginto bold";
   font-weight: bold;
   font-style: normal;
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .realty header.realty__heading div.realty__headerContainer div.realty__smallTitle {
+    font-size: 2.5rem;
+  }
 }
 
 .realty header.realty__heading div.realty__headerContainer div.realty__smallTitle span {
@@ -3014,6 +3040,12 @@ p {
   font-weight: bold;
   font-style: normal;
   text-align: center;
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .realty header.realty__heading div.realty__headerContainer div.realty__bigTitle {
+    font-size: 5rem;
+  }
 }
 
 .realty header.realty__heading div.realty__headerContainer div.realty__bigTitle h1 {
@@ -3039,6 +3071,12 @@ p {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .realty_services {
+    display: none;
+  }
 }
 
 .realty_services .realty_services-svg {
@@ -3090,7 +3128,7 @@ p {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  height: 385px;
+  height: 48.125rem;
   width: 90%;
   background-color: #ffffff;
   -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
@@ -8124,6 +8162,24 @@ html::-webkit-scrollbar {
   margin-bottom: 10%;
 }
 
+@media (min-width: 2559px) {
+  .realEstate header.realEstate_header {
+    background-image: url("../images/REALTY/desktop/1800b.png");
+  }
+}
+
+@media (min-width: 1800px) and (max-width: 2559px) {
+  .realEstate header.realEstate_header {
+    background-image: url("../images/REALTY/desktop/1800b.png");
+  }
+}
+
+@media (min-width: 1504px) and (max-width: 1799px) {
+  .realEstate header.realEstate_header {
+    background-image: url("../images/REALTY/desktop/1504.png");
+  }
+}
+
 @media (min-width: 900px) and (max-width: 1024px) {
   .realEstate header.realEstate_header {
     background-image: url("../images/REALTY/desktop/900.png");
@@ -8144,7 +8200,7 @@ html::-webkit-scrollbar {
 
 @media (min-width: 1024px) and (max-width: 1199px) {
   .realEstate header.realEstate_header {
-    height: 108vh;
+    height: 100vh;
   }
 }
 
@@ -8184,6 +8240,278 @@ html::-webkit-scrollbar {
 @media (min-width: 900px) and (max-width: 1199px) {
   .realEstate header.realEstate_header nav.realEstate_navigation {
     display: none;
+  }
+}
+
+@media (min-width: 2559px) {
+  .realEstate header.realEstate_header nav.realEstate_navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-family: 'GT Super Ds Trial Bd';
+    color: #EFF3FF;
+    z-index: 100;
+    position: absolute;
+    right: 0;
+    padding-right: 3.5%;
+    width: 100%;
+    padding-left: 3.5%;
+  }
+  .realEstate header.realEstate_header nav.realEstate_navigation ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.45rem 1.45rem;
+  }
+  .realEstate header.realEstate_header nav.realEstate_navigation ul li {
+    font-family: 'GT Super Ds Trial Bd';
+    margin: 1.4rem;
+    padding-left: 0;
+    font-size: 1.9rem;
+    margin: 1rem;
+  }
+  .realEstate header.realEstate_header nav.realEstate_navigation ul li a {
+    color: #EFF3FF;
+    margin-bottom: 0;
+    position: relative;
+    padding: 10px 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    -webkit-transition: .5s;
+    transition: .5s;
+    padding: 5px 3px 15px;
+  }
+  .realEstate header.realEstate_header nav.realEstate_navigation ul li a::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    top: 100%;
+    left: 0;
+    background: #001a7d;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+}
+
+@media (min-width: 1800px) and (max-width: 2559px) {
+  .realEstate header.realEstate_header nav.realEstate_navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-family: 'GT Super Ds Trial Bd';
+    color: #EFF3FF;
+    z-index: 100;
+    position: absolute;
+    right: 0;
+    padding-right: 3.5%;
+    width: 100%;
+    padding-left: 3.5%;
+  }
+  .realEstate header.realEstate_header nav.realEstate_navigation ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.45rem 1.45rem;
+  }
+  .realEstate header.realEstate_header nav.realEstate_navigation ul li {
+    font-family: 'GT Super Ds Trial Bd';
+    margin: 1.4rem;
+    padding-left: 0;
+    font-size: 1.9rem;
+    margin: 1rem;
+  }
+  .realEstate header.realEstate_header nav.realEstate_navigation ul li a {
+    color: #EFF3FF;
+    margin-bottom: 0;
+    position: relative;
+    padding: 10px 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    -webkit-transition: .5s;
+    transition: .5s;
+    padding: 5px 3px 15px;
+  }
+  .realEstate header.realEstate_header nav.realEstate_navigation ul li a::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    top: 100%;
+    left: 0;
+    background: #001a7d;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+}
+
+@media (min-width: 1536px) and (max-width: 1799px) {
+  .realEstate header.realEstate_header nav.realEstate_navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-family: 'GT Super Ds Trial Bd';
+    color: #EFF3FF;
+    z-index: 100;
+    position: absolute;
+    right: 0;
+    padding-right: 3.5%;
+    width: 100%;
+    padding-left: 3.5%;
+  }
+  .realEstate header.realEstate_header nav.realEstate_navigation ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.45rem 1.45rem;
+  }
+  .realEstate header.realEstate_header nav.realEstate_navigation ul li {
+    font-family: 'GT Super Ds Trial Bd';
+    margin: 1.4rem;
+    padding-left: 0;
+    font-size: 1.9rem;
+    margin: 1rem;
+  }
+  .realEstate header.realEstate_header nav.realEstate_navigation ul li a {
+    color: #EFF3FF;
+    margin-bottom: 0;
+    position: relative;
+    padding: 10px 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    -webkit-transition: .5s;
+    transition: .5s;
+    padding: 5px 3px 15px;
+  }
+  .realEstate header.realEstate_header nav.realEstate_navigation ul li a::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    top: 100%;
+    left: 0;
+    background: #001a7d;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+}
+
+@media (min-width: 1366px) and (max-width: 1535px) {
+  .realEstate header.realEstate_header nav.realEstate_navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-family: 'GT Super Ds Trial Bd';
+    color: #EFF3FF;
+    z-index: 100;
+    position: absolute;
+    right: 0;
+    padding-right: 3.5%;
+    width: 100%;
+    padding-left: 3.5%;
+  }
+  .realEstate header.realEstate_header nav.realEstate_navigation ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.45rem 1.45rem;
+  }
+  .realEstate header.realEstate_header nav.realEstate_navigation ul li {
+    font-family: 'GT Super Ds Trial Bd';
+    margin: 1.4rem;
+    padding-left: 0;
+    font-size: 1.9rem;
+    margin: 1rem;
+  }
+  .realEstate header.realEstate_header nav.realEstate_navigation ul li a {
+    color: #EFF3FF;
+    margin-bottom: 0;
+    position: relative;
+    padding: 10px 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    -webkit-transition: .5s;
+    transition: .5s;
+    padding: 5px 3px 15px;
+  }
+  .realEstate header.realEstate_header nav.realEstate_navigation ul li a::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    top: 100%;
+    left: 0;
+    background: #001a7d;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: right;
+            transform-origin: right;
   }
 }
 
@@ -8307,6 +8635,30 @@ html::-webkit-scrollbar {
   height: 61px;
 }
 
+@media (min-width: 1366px) {
+  .realEstate header.realEstate_header nav .realEstate_logoWrap img {
+    height: unset;
+  }
+}
+
+@media (min-width: 1800px) and (max-width: 2559px) {
+  .realEstate header.realEstate_header nav .realEstate_logoWrap img {
+    width: 280px;
+  }
+}
+
+@media (min-width: 1536px) and (max-width: 1799px) {
+  .realEstate header.realEstate_header nav .realEstate_logoWrap img {
+    width: 250px;
+  }
+}
+
+@media (min-width: 1366px) and (max-width: 1535px) {
+  .realEstate header.realEstate_header nav .realEstate_logoWrap img {
+    width: 200px;
+  }
+}
+
 @media (min-width: 1200px) and (max-width: 1365px) {
   .realEstate header.realEstate_header nav .realEstate_logoWrap img {
     width: 190px;
@@ -8358,6 +8710,12 @@ html::-webkit-scrollbar {
   font-family: inherit;
   letter-spacing: inherit;
   line-height: 1.2;
+}
+
+@media (min-width: 1366px) {
+  .realEstate header.realEstate_header nav .realEstate_navItem ul li {
+    font-size: 1.71rem;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1365px) {
@@ -8462,6 +8820,24 @@ html::-webkit-scrollbar {
   }
 }
 
+@media (min-width: 1800px) and (max-width: 2559px) {
+  .realEstate header.realEstate_header section .realEstate_leftContainer .realEstate_innerLeftContainer .realEstate_title-wrap {
+    font-size: 5.2rem;
+  }
+}
+
+@media (min-width: 1536px) and (max-width: 1799px) {
+  .realEstate header.realEstate_header section .realEstate_leftContainer .realEstate_innerLeftContainer .realEstate_title-wrap {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 1366px) and (max-width: 1535px) {
+  .realEstate header.realEstate_header section .realEstate_leftContainer .realEstate_innerLeftContainer .realEstate_title-wrap {
+    font-size: 4.95rem;
+  }
+}
+
 @media (min-width: 1200px) and (max-width: 1365px) {
   .realEstate header.realEstate_header section .realEstate_leftContainer .realEstate_innerLeftContainer .realEstate_title-wrap {
     font-size: 4.95rem;
@@ -8492,6 +8868,24 @@ html::-webkit-scrollbar {
 @media (min-width: 901px) {
   .realEstate header.realEstate_header section .realEstate_leftContainer .realEstate_innerLeftContainer .realEstate_text-wrap {
     font-size: 2rem;
+  }
+}
+
+@media (min-width: 1800px) and (max-width: 2559px) {
+  .realEstate header.realEstate_header section .realEstate_leftContainer .realEstate_innerLeftContainer .realEstate_text-wrap {
+    font-size: 1.95rem;
+  }
+}
+
+@media (min-width: 1536px) and (max-width: 1799px) {
+  .realEstate header.realEstate_header section .realEstate_leftContainer .realEstate_innerLeftContainer .realEstate_text-wrap {
+    font-size: 1.90rem;
+  }
+}
+
+@media (min-width: 1366px) and (max-width: 1535px) {
+  .realEstate header.realEstate_header section .realEstate_leftContainer .realEstate_innerLeftContainer .realEstate_text-wrap {
+    font-size: 1.9rem;
   }
 }
 
@@ -8530,6 +8924,26 @@ html::-webkit-scrollbar {
   margin-top: 8rem;
 }
 
+@media (min-width: 2559px) {
+  .realEstate header.realEstate_header section .realEstate_rightContainer {
+    border-radius: 0% 0% 45%;
+    border-bottom: 10px solid #024EFF;
+  }
+}
+
+@media (min-width: 1800px) and (max-width: 2559px) {
+  .realEstate header.realEstate_header section .realEstate_rightContainer {
+    border-radius: 0% 0% 45%;
+    border-bottom: 10px solid #024EFF;
+  }
+}
+
+@media (min-width: 1600px) {
+  .realEstate header.realEstate_header section .realEstate_rightContainer {
+    margin-top: 4rem;
+  }
+}
+
 .realEstate header.realEstate_header section .realEstate_rightContainer .realEstate_headImage {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8562,6 +8976,13 @@ html::-webkit-scrollbar {
   height: 731px;
   -webkit-transform: translateX(-180px) translateY(5px);
           transform: translateX(-180px) translateY(5px);
+}
+
+@media (min-width: 1600px) {
+  .realEstate header.realEstate_header section .realEstate_rightContainer .realEstate_headImage figure img {
+    -webkit-transform: unset;
+            transform: unset;
+  }
 }
 
 .realEstate article.realty__article {
@@ -8610,6 +9031,12 @@ html::-webkit-scrollbar {
           flex-direction: row-reverse;
 }
 
+@media (min-width: 900px) and (max-width: 1199px) {
+  .realEstate article.realty__article div.realty__article-content div.realty__innerWrap div.realty__image {
+    height: 60.7975rem;
+  }
+}
+
 .realEstate article.realty__article div.realty__article-content div.realty__innerWrap div.realty__image .realty__image-svgOne {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8631,6 +9058,13 @@ html::-webkit-scrollbar {
 .realEstate article.realty__article div.realty__article-content div.realty__innerWrap div.realty__image .realty__image-svgOne#realty__image-svgOne-two {
   left: 0;
   right: unset;
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .realEstate article.realty__article div.realty__article-content div.realty__innerWrap div.realty__image .realty__image-svgOne#realty__image-svgOne-two {
+    width: 100px;
+    height: 149px;
+  }
 }
 
 .realEstate article.realty__article div.realty__article-content div.realty__innerWrap div.realty__image .realty__image-svgOne.svgabout-2 {
@@ -8660,6 +9094,12 @@ html::-webkit-scrollbar {
   position: absolute;
   left: 400px;
   bottom: 0;
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .realEstate article.realty__article div.realty__article-content div.realty__innerWrap div.realty__image .realty__image-svgTwo {
+    display: none;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 700px) {
@@ -8728,6 +9168,12 @@ html::-webkit-scrollbar {
   font-size: 3rem;
   text-align: left;
   letter-spacing: 0.45px;
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .realEstate article.realty__article div.realty__article-content div.realty__innerWrap div.realty__content div.realty__textWrap div.realty__text-container {
+    font-size: 2.2rem;
+  }
 }
 
 .realEstate article.realty__article div.realty__article-content div.realty__innerWrap div.realty__content div.realty__textWrap div.realty__text-container#realty__text-container {
@@ -8816,6 +9262,24 @@ html::-webkit-scrollbar {
   border-radius: 25% 0 50% 5%;
 }
 
+@media (min-width: 2559px) {
+  .ws_images > div {
+    border-radius: 50% 2% 0%;
+  }
+}
+
+@media (min-width: 1800px) and (max-width: 2559px) {
+  .ws_images > div {
+    border-radius: 50% 2% 0%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .ws_images > div {
+    border-radius: 50% 6%;
+  }
+}
+
 @media (min-width: 1200px) and (max-width: 1365px) {
   .ws_images > div {
     border-radius: 50% 0% 50% 35%;
@@ -8828,5 +9292,85 @@ html::-webkit-scrollbar {
 
 .ws-title {
   display: none !important;
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  main.investment_service {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    max-width: 100%;
+  }
+  main.investment_service section.investment_service-main {
+    margin: 5rem 0 6.3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  main.investment_service section.investment_service-main div.investment_service-inner_img {
+    width: 60%;
+  }
+  main.investment_service section.investment_service-main div.investment_service-inner_img div.investment_service-image {
+    max-width: 600px;
+    max-height: 308px;
+    background-image: url("../images/REALTY/desktop/invest.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  main.investment_service section.investment_service-main div.investment_service-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  main.investment_service section.investment_service-main div.investment_service-content div.investment_service-header {
+    color: #313962;
+  }
+  main.investment_service section.investment_service-main div.investment_service-content div.investment_service-header h1 {
+    color: inherit;
+    font-family: "GT Super Ds Trial Bd";
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 0.45px;
+    font-size: 3.75rem;
+    text-transform: uppercase;
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+  }
+  main.investment_service section.investment_service-main div.investment_service-content div.investment_service-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main.investment_service section.investment_service-main div.investment_service-content div.investment_service-text p {
+    font-family: "Ginto regular";
+    font-weight: normal;
+    text-align: left;
+    letter-spacing: 0.45px;
+    font-size: 20px;
+    -webkit-margin-before: 0;
+    margin-block-start: 0;
+    font-size: 2.5rem;
+    color: #000;
+  }
 }
 /*# sourceMappingURL=Locataire.css.map */

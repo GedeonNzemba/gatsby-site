@@ -31,6 +31,12 @@ p {
   // background-color: #dddddd;
   justify-content: flex-start;
 
+  @include for-tablet-landscape-only {
+    min-height: unset;
+    margin-bottom: 24rem;
+
+  }
+
   & header.realty__heading {
     display: flex;
     flex-direction: row;
@@ -52,6 +58,15 @@ p {
           position: absolute;
           left: 2.5%;
           top: 0;
+
+          & img {
+            @include for-tablet-landscape-only {
+              width: 100px;
+              height: 149px;
+            }
+          }
+
+         
     }
 
     & div.realty__headerContainer {
@@ -61,12 +76,20 @@ p {
       text-align: center;
       // border: 1px solid palegreen;
 
+      @include for-tablet-landscape-only {
+        margin-left: 8.5rem;
+      }
+
       & div.realty__smallTitle {
         color: $blue;
         font-size: $large-body-copy;
         font-family: "Ginto bold";
         font-weight: bold;
         font-style: normal;
+
+        @include for-tablet-landscape-only {
+          font-size: 2.5rem;
+        }
 
         & span {
           color: inherit;
@@ -84,6 +107,10 @@ p {
         font-weight: bold;
         font-style: normal;
         text-align: center;
+
+        @include for-tablet-landscape-only {
+          font-size: 5rem;
+        }
 
         & h1 {
           color: inherit;
@@ -287,6 +314,9 @@ p {
 
 // REALTY SERVICES
 .realty_services {
+  @include for-tablet-landscape-only {
+    display: none;
+  }
   display: flex;
   flex-direction: column;
   height: 1189px;
@@ -294,6 +324,7 @@ p {
   position: relative;
   justify-content: flex-start;
   // margin-top: 8%;
+
 
   & .realty_services-svg {
     background-image: url("../images/REALTY/Group10.png");
@@ -340,7 +371,7 @@ p {
     top: 16.5%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 385px;
+    height: 48.125rem;
     width: 90%;
     background-color: #ffffff;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);

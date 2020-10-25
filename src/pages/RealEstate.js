@@ -837,6 +837,33 @@ export default function RealEstate() {
         <br />
         <br /> {/* INVERSTMENT SERVICES */}
         <br />
+        
+        {/* TABLET */}
+        <main className="investment_service">
+          <section className="investment_service-main">
+            <div className="investment_service-inner_img">
+              <div className="investment_service-image" />
+            </div>
+          
+          <div className="investment_service-content">
+            <div className="investment_service-header">
+              <h1 style={{marginBlockStart: "none"}}>investment service</h1>
+            </div>
+            <div className="investment_service-text">
+              <p>
+                Locataire offers to prospective partners opportunities
+                to invest in dozens of high-growth residential and
+                commercial properties in the United States, and Canada.
+              </p>
+              <p>
+                We leverage experience and local market knowledge to
+                produce top quality risk-adjusted returns for investors.
+              </p>
+            </div>
+          </div>
+          </section>
+        </main>
+
         <div className="realty_services">
           <span className="realty_services-svg"></span>
           <div className="realty__services-svgDivider"></div>
