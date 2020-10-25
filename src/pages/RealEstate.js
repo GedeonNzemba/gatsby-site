@@ -135,14 +135,14 @@ export default function RealEstate() {
       <ParallaxProvider>
       <div className="realEstate-midD">
       <nav className="realEstate-navbar">
-          <Router>
+          {/* <Router>
             <Navbar />
             <Switch>
               <Route path='/RealEstate_v' exact component={Real_Estate} />
               <Route path='/Farm' component={Farm} />
               <Route path='/RiskManagement' component={RiskManagement} />
             </Switch>
-          </Router> 
+          </Router>  */}
             {/* <div className="realEstate-logo" />
             <div id="burger" /> */}
           </nav>
