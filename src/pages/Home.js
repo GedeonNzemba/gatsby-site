@@ -14,7 +14,7 @@ const Farm = (props) => {
           <Router>
             <Navbar />
             <Switch>
-              <Route path='/' exact component={LocataireFarm} />
+              <Route path='/Farm' exact component={LocataireFarm} />
               <Route path='/RealEstate' component={RealEstate} />
               <Route path='/RiskManagement' component={RiskManagement} />
             </Switch>
